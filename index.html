@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Cazadores y Zorro - Algoritmo</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="shortcut icon" type="image/jpg" href="assets/images/icon.png">
+</head>
+<body>
+    <div class="container">
+        <h1>Cazadores y Zorro - Algoritmo</h1>
+        <div class="mensajes">
+            <div class="mensaje victoria" id="mensaje-victoria">
+                <p>Felicidades, lograste atrapar al zorro🎉🎉</p>
+            </div>
+
+            <div class="mensaje derrota" id="mensaje-derrota">
+                <p>Vaya, hoy no se come, el zorro se ha escapado😔😔</p>
+            </div>
+
+            <div class="mensaje iniciar" id="mensaje-iniciar">
+                <p>Debes iniciar primero la partida, antes de realizar algún movimiento</p>
+            </div>
+            
+        </div>
+        <div class="tablero">
+
+            <div data-cell="00"></div>
+            <div class="black-cell" data-cell="01"><img src="assets/images/cazador.png" alt="" id="cazador1" ondragstart="drag(event)"></div>
+            <div data-cell="02"></div>
+            <div class="black-cell" data-cell="03"><img src="assets/images/cazador.png" alt="" id="cazador2" ondragstart="drag(event)"></div>
+            <div data-cell="04"></div>
+            <div class="black-cell" data-cell="05"><img src="assets/images/cazador.png" alt="" id="cazador3" ondragstart="drag(event)"></div>
+            <div data-cell="06"></div>
+            <div class="black-cell" data-cell="07"><img src="assets/images/cazador.png" alt="" id="cazador4" ondragstart="drag(event)"></div>
+
+            <div class="black-cell" data-cell="10"></div>
+            <div data-cell="11"></div>
+            <div class="black-cell" data-cell="12"></div>
+            <div data-cell="13"></div>
+            <div class="black-cell" data-cell="14"></div>
+            <div data-cell="15"></div>
+            <div class="black-cell" data-cell="16"></div>
+            <div data-cell="17"></div>
+
+            <div data-cell="20"></div>
+            <div class="black-cell" data-cell="21"></div>
+            <div data-cell="22"></div>
+            <div class="black-cell" data-cell="23"></div>
+            <div data-cell="24"></div>
+            <div class="black-cell" data-cell="25"></div>
+            <div data-cell="26"></div>
+            <div class="black-cell" data-cell="27"></div>
+
+
+            <div class="black-cell" data-cell="30"></div>
+            <div data-cell="31"></div>
+            <div class="black-cell" data-cell="32"></div>
+            <div data-cell="33"></div>
+            <div class="black-cell"data-cell="34"></div>
+            <div data-cell="35"></div>
+            <div class="black-cell" data-cell="36"></div>
+            <div data-cell="37"></div>
+
+            <div data-cell="40"></div>
+            <div class="black-cell" data-cell="41"></div>
+            <div data-cell="42"></div>
+            <div class="black-cell" data-cell="43"></div>
+            <div data-cell="44"></div>
+            <div class="black-cell" data-cell="45"></div>
+            <div data-cell="46"></div>
+            <div class="black-cell" data-cell="47"></div>
+
+            <div class="black-cell" data-cell="50"></div>
+            <div data-cell="51"></div>
+            <div class="black-cell" data-cell="52"></div>
+            <div data-cell="53"></div>
+            <div class="black-cell" data-cell="54"></div>
+            <div data-cell="55"></div>
+            <div class="black-cell" data-cell="56"></div>
+            <div data-cell="57"></div>
+
+            <div data-cell="60"></div>
+            <div class="black-cell" data-cell="61"></div>
+            <div data-cell="62"></div>
+            <div class="black-cell" data-cell="63"></div>
+            <div data-cell="64"></div>
+            <div class="black-cell" data-cell="65"></div>
+            <div data-cell="66"></div>
+            <div class="black-cell" data-cell="67"></div>
+            
+            
+            <div class="black-cell" data-cell="70"></div>
+            <div data-cell="71"></div>
+            <div class="black-cell" data-cell="72"></div>
+            <div data-cell="73"></div>
+            <div class="black-cell" data-cell="74"></div>
+            <div data-cell="75"></div>
+            <div class="black-cell" data-cell="76"></div>
+            <div data-cell="77"></div>
+        </div>
+        <div class="container__button">
+            <button class="botonJuego" id="startGame">Iniciar Partida</button>
+            <button class="botonJuego" id="restartGame">Reiniciar Partida</button>
+        </div>
+    </div>
+    <script src="assets/js/algoritmo.js"></script>
+</body>
+</html>
